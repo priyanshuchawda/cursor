@@ -1,0 +1,59 @@
+
+/* Cursor-specific animations */
+@layer utilities {
+  .cursor-meteor * {
+    cursor: none !important;
+  }
+  
+  .cursor-blob * {
+    cursor: none !important;
+  }
+  
+  .cursor-magnet * {
+    cursor: none !important;
+  }
+  
+  .cursor-pixel * {
+    cursor: none !important;
+  }
+  
+  .cursor-neon * {
+    cursor: none !important;
+  }
+
+  /* Particle effects */
+  .particle {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    animation: particle-float 2s ease-out forwards;
+  }
+
+  @keyframes particle-float {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(var(--random-x, 0), var(--random-y, -50px)) scale(0);
+    }
+  }
+
+  /* Terminal-style animations */
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  /* Scanlines animation */
+  @keyframes scanlines {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+  }
+}
