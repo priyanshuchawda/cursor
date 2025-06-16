@@ -277,9 +277,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Website**: [Live Demo](https://cursor-lab.netlify.app)
+- **Website**: [Live Demo](https://cursordobble.netlify.app/)
 - **GitHub**: [@priyanshuchawda](https://github.com/priyanshuchawda)
-- **Email**: your.email@example.com
 
 ## 🌟 Inspiration
 
